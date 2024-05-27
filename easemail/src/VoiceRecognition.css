@@ -2,13 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
     background-color: #f9f9f9;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 0 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: white;
+    font-size: 1.8em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* Altura descontando la navbar */
+    width: 100%;
 }
 
 h1 {

@@ -41,11 +41,16 @@ const VoiceRecognition = () => {
 
     return (
         <div className="container">
-            <h1>EasEmail - Redacta tu correo fácil y rápido</h1>
-            <button onClick={startListening} className={`button ${listening ? 'listening' : ''}`}>
-                {listening ? 'Escuchando...' : 'Habla con Alexa!'}
-            </button>
-            <div className="result">{transcript}</div>
+            <div className="navbar">
+                <h1>EasEmail</h1>
+            </div>
+            <div className="content">
+                <h1>Redacta tu correo fácil y rápido</h1>
+                <button onClick={startListening} className={`button ${listening ? 'listening' : ''}`}>
+                    {listening ? 'Escuchando...' : 'Habla con Alexa!'}
+                </button>
+                <div className="result">{transcript}</div>
+            </div>
         </div>
     );
 };
