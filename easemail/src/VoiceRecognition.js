@@ -40,9 +40,9 @@ const VoiceRecognition = () => {
 
     return (
         <div style={styles.container}>
-            <h1>EasEmail - Voice Interaction</h1>
+            <h1>EasEmail - Redactas tu correos fácil y rápido!</h1>
             <button onClick={startListening} style={styles.button}>
-                {listening ? 'Listening...' : 'Talk to Computer'}
+                {listening ? 'Escuchando...' : 'Habla con Alexa!'}
             </button>
             <div style={styles.result}>{transcript}</div>
         </div>
